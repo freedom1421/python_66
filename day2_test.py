@@ -1,0 +1,10 @@
+#อ่านภาพ
+import cv2
+img = cv2.imread("image/cat.jpg")
+imgresize = cv2.resize(img,(400,400))
+#แสดงภาพ
+cv2.imshow("My Cat",imgresize)
+#save picture
+cv2.imwrite("output1.jpg",imgresize)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
